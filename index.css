@@ -1,0 +1,74 @@
+body {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-column: 15px;
+    grid-template-areas: "box1"
+    "box2"
+    "box3";
+}
+
+
+#boxA {
+    display:flex;
+    grid-area: box1;
+    height: 20px;
+    background-color: rgb(189, 186, 186); 
+}
+.dot1{
+    background: rgb(106, 95, 95);
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    margin: 3px;
+}
+#boxB {
+    grid-area: box2;
+}
+.img{
+height: 500px;
+}
+
+#boxC {
+    display: flex;
+    gap:10px;
+    grid-area: box3;
+    min-height: 30px;
+    background-color:rgb(189, 186, 186) ;
+}
+.nav{
+    font-size: 8px;
+    margin-top: 10px;
+}
+.nav1{
+    font-size: 8px;
+    margin-top: 10px;
+    margin-left: 400px;
+
+}
+.arrows{
+    display: flex;
+    flex-direction: column;
+    font-size: smaller;
+}
+.arrow1 {
+    content: "\1F865";
+    margin-left: 699px;
+    font-size: 7px;
+    font-weight: bold;
+   
+}
+.arrow {
+    content: "\1F867";
+    margin-left: 692px;
+    font-size: 7px;
+    font-weight: bold;
+}
+
+@media screen and (max-width:400px) {
+    body,#boxA,#boxB,#boxC,.img,.nav,.nav1{
+        max-width: 400px;
+        max-height: auto;
+        margin: auto;
+    }
+    
+}
